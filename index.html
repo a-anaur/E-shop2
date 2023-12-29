@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Philosopher:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#footer">E-SHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 left top-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 right">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"></a>Register</li>
+                            <li><a class="dropdown-item" href="#"></a>Authorise</li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-primary text-white">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                            Cart
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr class="first">
+                                                    <td>
+                                                        <a href="#"><img src="img/pexels-alex-azabache-3766111.jpg"
+                                                                alt="" /></a>
+                                                    </td>
+                                                    <td><a href="#">Wathes</a></td>
+                                                    <td>$199</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr class="second">
+                                                    <td>
+                                                        <a href="#"><img src="img/pexels-javon-swaby-2783873.jpg"
+                                                                alt="" /></a>
+                                                    </td>
+                                                    <td><a href="#">Wathes 2</a></td>
+                                                    <td>$239</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr class="third">
+                                                    <td>
+                                                        <a href="#"><img src="img/pexels-olena-bohovyk-3550482.jpg"
+                                                                alt="" /></a>
+                                                    </td>
+                                                    <td><a href="#">Keyboard</a></td>
+                                                    <td>$105</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr class="second">
+                                                    <td>
+                                                        <a href="#"><img src="img/pexels-javon-swaby-2783873.jpg"
+                                                                alt="" /></a>
+                                                    </td>
+                                                    <td><a href="#">Wathes 2</a></td>
+                                                    <td>$239</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr class="third">
+                                                    <td>
+                                                        <a href="#"><img src="img/pexels-olena-bohovyk-3550482.jpg"
+                                                                alt="" /></a>
+                                                    </td>
+                                                    <td><a href="#">Keyboard</a></td>
+                                                    <td>$105</td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer bg-primary text-white">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                            Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                            Save changes
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active w-100">
+                    <img src="img/pexels-alex-azabache-3766111.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item w-100">
+                    <img src="img/pexels-javon-swaby-2783873.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item w-100">
+                    <img src="img/pexels-olena-bohovyk-3550482.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item w-100">
+                    <img src="img/pexels-javon-swaby-2783873.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item w-100">
+                    <img src="img/pexels-olena-bohovyk-3550482.jpg" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="product-card w-80">
+                        <div class="product-thumb">
+                            <a href="#"><img src="img/pexels-alex-azabache-3766111.jpg" alt="..." /></a>
+                        </div>
+                        <div class="product-details">
+                            <h4 class="text-center"><a href="#">Wathes</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Itaque, omnis architecto, ullam voluptate ea quos velit nobis
+                                rerum ipsum
+                            </p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$230.99</small> New price: $125
+                                </div>
+                                <div class="product-links">
+                                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="product-card w-80">
+                        <div class="product-thumb">
+                            <a href="#"><img src="img/pexels-javon-swaby-2783873.jpg" alt="..." /></a>
+                        </div>
+                        <div class="product-details">
+                            <h4 class="text-center"><a href="#">Wathes 2</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Itaque, omnis architecto, ullam voluptate ea quos velit nobis
+                                rerum ipsum
+                            </p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$215</small> New price: $109
+                                </div>
+                                <div class="product-links">
+                                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="product-card w-80">
+                        <div class="product-thumb">
+                            <a href="#"><img src="img/pexels-olena-bohovyk-3550482.jpg" alt="..." /></a>
+                        </div>
+                        <div class="product-details">
+                            <h4 class="text-center"><a href="#">Keyboard</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Itaque, omnis architecto, ullam voluptate ea quos velit nobis
+                                rerum ipsum
+                            </p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$117</small> New price: $89
+                                </div>
+                                <div class="product-links">
+                                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="product-card w-80">
+                        <div class="product-thumb">
+                            <a href="#"><img src="img/pexels-alex-azabache-3766111.jpg" alt="..." /></a>
+                        </div>
+                        <div class="product-details">
+                            <h4 class="text-center"><a href="#">Wathes</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Itaque, omnis architecto, ullam voluptate ea quos velit nobis
+                                rerum ipsum
+                            </p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$230.99</small> New price: $125
+                                </div>
+                                <div class="product-links">
+                                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="product-card w-80">
+                        <div class="product-thumb">
+                            <a href="#"><img src="img/pexels-javon-swaby-2783873.jpg" alt="..." /></a>
+                        </div>
+                        <div class="product-details">
+                            <h4 class="text-center"><a href="#">Wathes 2</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Itaque, omnis architecto, ullam voluptate ea quos velit nobis
+                                rerum ipsum
+                            </p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$215</small> New price: $109
+                                </div>
+                                <div class="product-links">
+                                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="product-card w-80">
+                        <div class="product-thumb">
+                            <a href="#"><img src="img/pexels-olena-bohovyk-3550482.jpg" alt="..." /></a>
+                        </div>
+                        <div class="product-details">
+                            <h4 class="text-center"><a href="#">Keyboard</a></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Itaque, omnis architecto, ullam voluptate ea quos velit nobis
+                                rerum ipsum
+                            </p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$117</small> New price: $89
+                                </div>
+                                <div class="product-links">
+                                    <a class="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"></a><a href="">Home</a></li>
+                            <li><a href="#"></a><a href="">About</a></li>
+                            <li><a href="#"></a><a href="">Pricing</a></li>
+                            <li><a href="#"></a><a href="">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Opened</h4>
+                        <ul class="list-unstyled">
+                            <li>Kaunas, Taikos street 6</li>
+                            <li>Mon-Sun: 9:00 - 18:00</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>Contacts</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="Phone: 822211111"></a><a href="">8-222-111111</a></li>
+                            <li><a href="Phone: 822211112"></a><a href="">8-222-111112</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h4>We on site</h4>
+                        <div class="footer-icons d-inline-block">                           
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- font-family: 'Roboto', sans-serif; -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
